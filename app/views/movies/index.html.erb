@@ -2,5 +2,5 @@
 <h2>A movie list</h2>
 
 <% @movies.each do |movie| %>
-  <p><%= movie.title %>, directed by <%= movie.director %>, released in <%= movie.release_year %></p>
+  <p><%= movie.title %>, directed by <%= movie.director.first_name %> <%= movie.director.last_name %>, released in <%= movie.release_year %></p>
 <% end %>
